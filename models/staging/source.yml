@@ -1,0 +1,7 @@
+sources:
+  - name: external_source
+    tables:
+    tables:
+      - name: taxis_nyc
+        meta:
+          external_location: "iceberg_scan('s3://warehouse/nyc/taxis', allow_moved_paths = true)"
